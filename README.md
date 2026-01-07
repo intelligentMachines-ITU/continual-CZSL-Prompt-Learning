@@ -7,29 +7,7 @@
 ---
 
 ## Overview
-
-Continual Compositional Zero-Shot Learning (CCZSL) aims to recognize novel attribute–object
-compositions (e.g., *old car*, *broken chair*) across incremental learning sessions, while
-preserving previously learned compositional knowledge.
-
-In this work, we propose a **prompt-based CCZSL framework** built upon vision–language models.
-Our approach introduces learnable compositional prompts that are incrementally updated across
-sessions, enabling the model to:
-- adapt to new attributes, objects, and compositions,
-- generalize to unseen compositions,
-- mitigate catastrophic forgetting without replay.
-
-The framework integrates **Session-aware Fusion Module** and **Multi Teacher Knowledge Distillation**, allowing stable prompt adaptation under continual learning constraints.
-
----
-
-## Method Highlights
-
-- Prompt-based formulation for continual compositional learning  
-- Session-aware mechanisms for updating compositional representations
-- Knowledge distillation across learning sessions
-- Cosine anchor alignment for semantic consistency  
-- Compatible with existing CZSL and VLM-based frameworks  
+With a focus on enabling stable and scalable learning of compositional concepts over time, we introduce Prompt-based Continual Compositional Zero-Shot Learning (Prompt-CCZSL), a novel framework that integrates continual learning principles into vision–language models for incremental acquisition of attribute–object compositions. Our approach formulates compositional learning through learnable prompts that are updated across sessions via a session-aware compositional fusion mechanism, allowing the model to adapt to newly introduced attributes, objects, and compositions while preserving previously learned semantic structure. To further mitigate catastrophic forgetting, we propose a continual adaptation strategy based on multi-teacher knowledge distillation, complemented by a Cosine Anchor Alignment Loss that enforces semantic consistency across sessions. Additionally, orthogonality and intra-session diversification constraints promote representation separability and enriched session-specific semantics in the prompt space. Extensive experiments demonstrate that Prompt-CCZSL achieves strong continual compositional generalization and significantly outperforms competitive CCZSL baselines under constrained continual settings.
 
 ---
 
