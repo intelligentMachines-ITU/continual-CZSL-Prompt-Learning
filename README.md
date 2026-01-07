@@ -1,8 +1,10 @@
 # Prompt-CCZSL: Prompt-Based Continual Compositional Zero-Shot Learning
 
-* **Title**: *Prompt-Based Continual Compositional Zero-Shot Learning*
-* **Paper**: Under review
-* **Code**: This repository
+* **Title**: **[Prompt-Based Continual Compositional Zero-Shot Learning](https://arxiv.org/pdf/2512.09172)**
+* **Authors**: Sauda Maryam , Sara Nadeem, Faisal Z. Qureshi, Mohsen Ali
+* **Institutes**: Information Technology University Lahore
+* **More details**: [[arXiv]](https://arxiv.org/pdf/2512.09172) | [[code]](https://github.com/Sauda123/Prompt-CCZSL) )
+
 
 ---
 
