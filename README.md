@@ -25,6 +25,9 @@ With a focus on enabling stable and scalable learning of compositional concepts 
 
 ## Main Results
 
+<p align="center">
+  <img src="assets/Quantitative Results.png" alt="Prompt-CCZSL Methodology" width="800"/>
+</p
 **Table 1:** Perfomance comparison with state-of-the-art CZSL methods under the continual CZSL protocol. We report session-wise AUC, average AUC (Avg), and final improvement (Final). Results are shown for Ut-Zappos and C-GQA dataset.
 ## Qualitative Results
 <p align="center">
