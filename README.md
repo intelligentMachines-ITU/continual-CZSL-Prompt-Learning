@@ -15,7 +15,7 @@
   <img src="assets/Methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
 </p>
 
-**Figure:** Overview of the proposed Prompt-CCZSL framework for continual compositional zero-shot learning.
+**Figure 1:** Overview of the proposed Prompt-CCZSL framework for continual compositional zero-shot learning.
 
 With a focus on enabling stable and scalable learning of compositional concepts over time, we introduce Prompt-based Continual Compositional Zero-Shot Learning (Prompt-CCZSL), a novel framework that integrates continual learning principles into vision–language models for incremental acquisition of attribute–object compositions. Our approach formulates compositional learning through learnable prompts that are updated across sessions via a session-aware compositional fusion mechanism, allowing the model to adapt to newly introduced attributes, objects, and compositions while preserving previously learned semantic structure. To further mitigate catastrophic forgetting, we propose a continual adaptation strategy based on multi-teacher knowledge distillation, complemented by a Cosine Anchor Alignment Loss that enforces semantic consistency across sessions. Additionally, orthogonality and intra-session diversification constraints promote representation separability and enriched session-specific semantics in the prompt space. Extensive experiments demonstrate that Prompt-CCZSL achieves strong continual compositional generalization and significantly outperforms competitive CCZSL baselines under constrained continual settings.
 
@@ -25,10 +25,12 @@ With a focus on enabling stable and scalable learning of compositional concepts 
 
 ## Main Results
 
+**Table 1:** Perfomance comparison with state-of-the-art CZSL methods under the continual CZSL protocol. We report session-wise AUC, average AUC (Avg), and final improvement (Final). Results are shown for Ut-Zappos and C-GQA dataset.
 ## Qualitative Results
 <p align="center">
   <img src="assets/qualitative Results.png" alt="Prompt-CCZSL Methodology" width="800"/>
 </p
+**Figure 2:** Session wise qualitative results for Zero-Shot Compositional Generalization on Ut-Zappos and C-GQA dataset.
 
 ---
 
