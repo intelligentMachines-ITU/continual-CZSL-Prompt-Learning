@@ -1,18 +1,18 @@
 # Prompt-CCZSL: Prompt-Based Continual Compositional Zero-Shot Learning
 
 * **Title**: **[Prompt-Based Continual Compositional Zero-Shot Learning](https://arxiv.org/pdf/2512.09172)**
-* **Authors**: Sauda Maryam , Sara Nadeem, Faisal Z. Qureshi, Mohsen Ali
+* **Authors**: Sauda Maryam, Sara Nadeem, Faisal Z. Qureshi, Mohsen Ali
 * **Institutes**: Information Technology University Lahore
-* **More details**: [[arXiv]](https://arxiv.org/pdf/2512.09172) | [[code]](https://github.com/Sauda123/Prompt-CCZSL) )
-
+* **More details**: [[arXiv]](https://arxiv.org/pdf/2512.09172) | [[Code]](https://github.com/Sauda123/Prompt-CCZSL)
 
 ---
 
 ## Overview
+
 ## Methodology Overview
 
 <p align="center">
-  <img src="assets/Methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
+  <img src="assets/methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
 </p>
 
 **Figure 1:** Overview of the proposed Prompt-CCZSL framework for continual compositional zero-shot learning.
@@ -26,16 +26,19 @@ With a focus on enabling stable and scalable learning of compositional concepts 
 ## Main Results
 
 <p align="center">
-  <img src="assets/Quantitative Results.png" alt="Prompt-CCZSL Methodology" width="800"/>
-</p
-**Table 1:** Perfomance comparison with state-of-the-art CZSL methods under the continual CZSL protocol. We report session-wise AUC, average AUC (Avg), and final improvement (Final). Results are shown for Ut-Zappos and C-GQA dataset.
+  <img src="assets/quantitative_results.png" alt="Prompt-CCZSL Quantitative Results" width="800"/>
+</p>
+
+**Table 1:** Performance comparison with state-of-the-art CZSL methods under the continual CZSL protocol. We report session-wise AUC, average AUC (Avg), and final improvement (Final). Results are shown for UT-Zappos and C-GQA datasets.
+
 ## Qualitative Results
+
 <p align="center">
-  <img src="assets/qualitative Results.png" alt="Prompt-CCZSL Methodology" width="800"/>
-</p
-**Figure 2:** Session wise qualitative results for Zero-Shot Compositional Generalization on Ut-Zappos and C-GQA dataset.
+  <img src="assets/qualitative_results.png" alt="Prompt-CCZSL Qualitative Results" width="800"/>
+</p>
+
+**Figure 2:** Session-wise qualitative results for zero-shot compositional generalization on UT-Zappos and C-GQA datasets.
 
 ---
 
 ## Code Structure
-
