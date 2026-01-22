@@ -23,7 +23,12 @@ With a focus on enabling stable and scalable learning of compositional concepts 
 
 ## Results
 
-Quantitative and qualitative results will be released upon paper acceptance.
+## Main Results
+
+## Qualitative Results
+<p align="center">
+  <img src="assets/qualitative Results.png" alt="Prompt-CCZSL Methodology" width="800"/>
+</p
 
 ---
 
