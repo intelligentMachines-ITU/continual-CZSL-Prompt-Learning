@@ -12,7 +12,7 @@
 ## Methodology Overview
 
 <p align="center">
-  <img src="assets/methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
+  <img src="assets/Methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
 </p>
 
 **Figure:** Overview of the proposed Prompt-CCZSL framework for continual compositional zero-shot learning.
