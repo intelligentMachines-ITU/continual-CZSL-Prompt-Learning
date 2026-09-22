@@ -34,7 +34,7 @@ With a focus on enabling stable and scalable learning of compositional concepts 
 ## Qualitative Results
 
 <p align="center">
-  <img src="assets/UtZappos" alt="Prompt-CCZSL Qualitative Results" width="800"/>
+  <img src="assets/UtZappos.png" alt="Prompt-CCZSL Qualitative Results" width="800"/>
 </p>
 **Figure 2:** Session-wise qualitative results for zero-shot compositional generalization on UT-Zappos dataset.
 <p align="center">
