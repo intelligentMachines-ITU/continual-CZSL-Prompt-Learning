@@ -9,7 +9,7 @@ The script is idempotent: safe to re-run. It skips files whose `.json`
 sibling is newer than the `.t7`.
 
 Usage:
-    python scripts/convert_t7_to_json.py [--force] [--root data]
+    python -m cczsl_benchmark.convert_t7_to_json [--force] [--root data]
 """
 
 from __future__ import annotations
@@ -39,7 +39,7 @@ def main(argv: list[str] | None = None) -> int:
         "--root",
         default=Path(__file__).resolve().parent.parent / "data",
         type=Path,
-        help="Benchmark root (default: data/ next to this script).",
+        help="Benchmark root (default: data/ next to the package).",
     )
     ap.add_argument(
         "--force",

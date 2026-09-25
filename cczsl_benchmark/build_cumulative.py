@@ -16,20 +16,16 @@ This script writes the result via `torch.save` to
 `<dataset>/session_<N>/cumulative/metadata_cumulative.t7`.
 
 Usage:
-    python scripts/build_cumulative.py <dataset> <session_id>
-    python scripts/build_cumulative.py --all             # rebuild every cumulative file
+    python -m cczsl_benchmark.build_cumulative <dataset> <session_id>
+    python -m cczsl_benchmark.build_cumulative --all
 """
 
 from __future__ import annotations
 
 import argparse
-import sys
 from pathlib import Path
 
-# Allow running as a script from repo root or scripts/ dir
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
-from cczsl_benchmark.loaders import (  # noqa: E402
+from .loaders import (
     DATASETS,
     default_data_root,
     list_sessions,

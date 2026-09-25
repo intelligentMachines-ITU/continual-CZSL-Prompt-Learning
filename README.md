@@ -102,8 +102,7 @@ data/
 ├── ut-zappos/     # same layout, sessions 0-2
 └── CGQA/          # same layout, sessions 0-5
 
-cczsl_benchmark/         # importable Python package (loaders)
-scripts/                 # convert_t7_to_json, build_manifest, validate_benchmark, build_cumulative
+cczsl_benchmark/         # importable Python package: loaders and CLI modules
 manifest.json            # per-file integrity manifest
 ```
 
@@ -165,9 +164,9 @@ md[0]  # {'image': 'ancient_highway/234952612_570360a0f5_z.jpg',
 The loader accepts dataset name aliases (`cgqa`, `C-GQA`, `mit_states`,
 and so on).
 
-To work with plain JSON, run `python scripts/convert_t7_to_json.py`. It
-writes a `.json` companion next to every `.t7`. Git ignores these files;
-regenerate them as needed.
+To work with plain JSON, run `python -m cczsl_benchmark.convert_t7_to_json`.
+It writes a `.json` companion next to every `.t7`. Git ignores these
+files; regenerate them as needed.
 
 ## Evaluation protocol
 
@@ -189,14 +188,14 @@ file under `data/`. Pair files carry a `line_count`. Metadata
 files carry an `entry_count`. To verify a fresh clone:
 
 ```bash
-python scripts/validate_benchmark.py
+python -m cczsl_benchmark.validate_benchmark
 # OK: 72 files verified
 ```
 
 To regenerate the manifest after intentional changes:
 
 ```bash
-python scripts/build_manifest.py
+python -m cczsl_benchmark.build_manifest
 ```
 
 To rebuild a cumulative metadata file from its session-scoped
@@ -204,26 +203,27 @@ components (the semantic rule is
 `cumulative_0..N = concat(session_0, ..., session_N)`):
 
 ```bash
-python scripts/build_cumulative.py ut-zappos 2   # one file
-python scripts/build_cumulative.py --all         # every cumulative file
+python -m cczsl_benchmark.build_cumulative ut-zappos 2   # one file
+python -m cczsl_benchmark.build_cumulative --all         # every cumulative file
 ```
 
-Run `validate_benchmark.py` in CI or as a pre-push hook. It catches
-truncation, corruption, or unintended modification of any file.
+Run `python -m cczsl_benchmark.validate_benchmark` in CI or as a
+pre-push hook. It catches truncation, corruption, or unintended
+modification of any file.
 
 ## Gallery
 
-`scripts/gallery.py` renders a browsable HTML gallery for a session.
-Images are grouped by (attr, obj), colored by split (train, val, test),
-and capped at a fixed number of samples per pair.
+`cczsl_benchmark.gallery` renders a browsable HTML gallery for a
+session. Images are grouped by (attr, obj), colored by split (train,
+val, test), and capped at a fixed number of samples per pair.
 
 ```bash
-python scripts/gallery.py mit-states 1 \
+python -m cczsl_benchmark.gallery mit-states 1 \
     --images-root ~/data/mit-states/images \
     --split train --per-pair 4 \
     --out gallery_ms_1_train.html
 
-python scripts/gallery.py cgqa 3 --cumulative \
+python -m cczsl_benchmark.gallery cgqa 3 --cumulative \
     --images-root ~/data/cgqa/images --per-pair 1 \
     --out gallery_cgqa_cum_3.html
 ```

@@ -9,13 +9,13 @@ The manifest records, for every file under `data/`:
 - `line_count` for pair-list files
 - `entry_count` for metadata files (loads with torch)
 
-Use this together with `scripts/validate_benchmark.py` to catch
+Use this together with `cczsl_benchmark.validate_benchmark` to catch
 truncation, corruption, or accidental modification of any benchmark
 file. This is the failure mode the original .t7 truncation would have
 exhibited.
 
 Usage:
-    python scripts/build_manifest.py [--root data] [--out manifest.json]
+    python -m cczsl_benchmark.build_manifest [--root data] [--out manifest.json]
 """
 
 from __future__ import annotations

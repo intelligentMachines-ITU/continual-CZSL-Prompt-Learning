@@ -9,7 +9,7 @@ that resolve at browser-render time against `--images-root`. The user
 supplies the image data separately (see the README download section).
 
 Usage:
-    python scripts/gallery.py <dataset> <session_id> \
+    python -m cczsl_benchmark.gallery <dataset> <session_id> \
         --images-root /path/to/<dataset>/images \
         [--cumulative]                 [--per-pair 4] \
         [--split {train,val,test,all}] [--seed 0] \
@@ -18,12 +18,12 @@ Usage:
 Examples:
     # Session-scoped gallery, four random samples per pair, from the
     # training split only.
-    python scripts/gallery.py mit-states 1 \
+    python -m cczsl_benchmark.gallery mit-states 1 \
         --images-root ~/data/mit-states/images \
         --split train --per-pair 4 --out gallery_ms_1_train.html
 
     # Cumulative gallery through session 3, one sample per pair.
-    python scripts/gallery.py cgqa 3 --cumulative \
+    python -m cczsl_benchmark.gallery cgqa 3 --cumulative \
         --images-root ~/data/cgqa/images --per-pair 1 \
         --out gallery_cgqa_cum_3.html
 """
@@ -33,13 +33,10 @@ from __future__ import annotations
 import argparse
 import html
 import random
-import sys
 from collections import defaultdict
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
-from cczsl_benchmark import load_metadata, load_session  # noqa: E402
+from .loaders import load_metadata, load_session
 
 
 _HTML_HEADER = """<!doctype html>

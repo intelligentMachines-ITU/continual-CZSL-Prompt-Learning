@@ -6,7 +6,7 @@ guardrail that would have caught the .t7 truncation described in the
 LFS-setup commit.
 
 Usage:
-    python scripts/validate_benchmark.py [--root data] [--manifest manifest.json]
+    python -m cczsl_benchmark.validate_benchmark [--root data] [--manifest manifest.json]
 """
 
 from __future__ import annotations

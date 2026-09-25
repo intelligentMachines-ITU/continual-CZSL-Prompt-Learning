@@ -21,5 +21,5 @@ env/
 *.local
 scratch/
 
-# Derived metadata (regenerable via scripts/convert_t7_to_json.py)
+# Derived metadata (regenerable via `python -m cczsl_benchmark.convert_t7_to_json`)
 data/**/*.json
