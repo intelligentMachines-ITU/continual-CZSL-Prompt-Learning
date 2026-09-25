@@ -15,11 +15,6 @@ The central goal of PromptCCZSL is to achieve a better balance between stability
 ## Dataset
 We evaluate our method on three compositional zero-shot learning benchmarks: MIT-States, UT-Zappos, and C-GQA.
 
-## Acknowledgement
-Our code references the following projects:
-[[Troika]](https://github.com/bighuang624/troika)**
-[[CSP]](https://github.com/BatsResearch/csp/tree/main)**
-
 ## Citations
 
 Please consider citing our paper in your publications if the project helps your research.
