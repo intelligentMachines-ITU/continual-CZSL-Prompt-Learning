@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the accompanying paper."
+title: "Continual Compositional Zero-Shot Learning (CCZSL) Benchmark"
+abstract: >-
+  A benchmark for Continual Compositional Zero-Shot Learning, in which
+  attributes and objects recur across sessions while their compositions
+  change. Built on top of MIT-States, UT-Zappos, and C-GQA. Ships
+  per-session pair splits (train/val/test/all) and per-image metadata
+  (session-scoped and cumulative-across-sessions).
+type: dataset
+version: "1.0.0"
+date-released: "2025-01-01"
+license: CC-BY-4.0
+repository-code: "https://github.com/intelligentMachines-ITU/continual-CZSL-Prompt-Learning"
+authors:
+  - family-names: Maryam
+    given-names: Sauda
+  - family-names: Nadeem
+    given-names: Sara
+  - family-names: Qureshi
+    given-names: Faisal
+    orcid: "https://orcid.org/0000-0002-2732-6939"
+  - family-names: Ali
+    given-names: Mohsen
+preferred-citation:
+  type: article
+  title: "Prompt-Based Continual Compositional Zero-Shot Learning"
+  authors:
+    - family-names: Maryam
+      given-names: Sauda
+    - family-names: Nadeem
+      given-names: Sara
+    - family-names: Qureshi
+      given-names: Faisal
+    - family-names: Ali
+      given-names: Mohsen
+  year: 2025
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:2512.09172"
+  url: "https://arxiv.org/abs/2512.09172"
