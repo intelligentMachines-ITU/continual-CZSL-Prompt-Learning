@@ -20,3 +20,6 @@ env/
 # Local scratch
 *.local
 scratch/
+
+# Derived metadata (regenerable via scripts/convert_t7_to_json.py)
+CCZL_benchmark/**/*.json
