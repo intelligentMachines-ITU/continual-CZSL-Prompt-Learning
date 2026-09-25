@@ -1,7 +1,0 @@
-Faux.Fur Boots.Mid-Calf
-Full.grain.leather Boots.Mid-Calf
-Full.grain.leather Shoes.Loafers
-Leather Shoes.Boat.Shoes
-Leather Shoes.Flats
-Nylon Shoes.Sneakers.and.Athletic.Shoes
-Nylon Slippers
