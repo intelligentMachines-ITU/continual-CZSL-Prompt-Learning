@@ -34,11 +34,14 @@ re-partitioned into continual-learning sessions:
 
 | Dataset       | Sessions | Total attrs | Total objs | Total pairs | Total images |
 | ------------- | -------- | ----------- | ---------- | ----------- | ------------ |
-| MIT-States    | 4 (0-3)  | 106         | 207        | 721         | 53,753       |
-| UT-Zappos     | 3 (0-2)  | 15          | 10         | 43          | 29,126       |
-| C-GQA         | 6 (0-5)  | 233         | 384        | 3,305       | 39,298       |
+| MIT-States    | 4 (0-3)  | 115         | 245        | 1,962       | 53,753       |
+| UT-Zappos     | 3 (0-2)  | 16          | 12         | 116         | 29,126       |
+| C-GQA         | 6 (0-5)  | 413         | 674        | 7,767       | 39,298       |
 
-Totals reflect the largest cumulative session.
+Each total reports the distinct value across the final cumulative
+session (`session_N/cumulative/metadata_cumulative.t7` for the largest
+`N`). Because CCZSL sessions revise their compositions, this cumulative
+total exceeds any single session's own count.
 
 ### Per-dataset session data cards
 
@@ -207,6 +210,27 @@ python scripts/build_cumulative.py --all         # every cumulative file
 
 Run `validate_benchmark.py` in CI or as a pre-push hook. It catches
 truncation, corruption, or unintended modification of any file.
+
+## Gallery
+
+`scripts/gallery.py` renders a browsable HTML gallery for a session.
+Images are grouped by (attr, obj), colored by split (train, val, test),
+and capped at a fixed number of samples per pair.
+
+```bash
+python scripts/gallery.py mit-states 1 \
+    --images-root ~/data/mit-states/images \
+    --split train --per-pair 4 \
+    --out gallery_ms_1_train.html
+
+python scripts/gallery.py cgqa 3 --cumulative \
+    --images-root ~/data/cgqa/images --per-pair 1 \
+    --out gallery_cgqa_cum_3.html
+```
+
+The script writes only HTML: `<img>` tags resolve at browser-render
+time against `--images-root`. Supply the image data separately (see the
+Download section above). Sampling is deterministic under `--seed`.
 
 ## Git LFS
 
