@@ -11,8 +11,8 @@ The manifest records, for every file under `CCZL_benchmark/`:
 
 Use this together with `scripts/validate_benchmark.py` to catch
 truncation, corruption, or accidental modification of any benchmark
-file — which is exactly the failure mode the original .t7 truncation
-would have exhibited.
+file. This is the failure mode the original .t7 truncation would have
+exhibited.
 
 Usage:
     python scripts/build_manifest.py [--root CCZL_benchmark] [--out manifest.json]

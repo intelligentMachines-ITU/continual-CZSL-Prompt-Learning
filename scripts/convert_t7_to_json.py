@@ -5,7 +5,7 @@ dict is `{image, attr, obj, set}`. This script emits a `.json` companion
 next to each `.t7` so downstream users can read the metadata without a
 Torch dependency.
 
-The script is idempotent — safe to re-run. It skips files whose `.json`
+The script is idempotent: safe to re-run. It skips files whose `.json`
 sibling is newer than the `.t7`.
 
 Usage:
