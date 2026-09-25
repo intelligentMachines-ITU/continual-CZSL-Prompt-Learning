@@ -8,7 +8,7 @@ LEARNING](https://arxiv.org/pdf/2512.09172)** (arXiv).
 ## Overview
 PromptCCZSL is a vision–language framework for Continual Compositional Zero-Shot Learning (CCZSL), where models incrementally learn evolving attribute–object compositions while retaining previously acquired knowledge.
 Unlike conventional continual learning, CCZSL allows attributes and objects to recur across sessions while their compositions change, creating challenges such as semantic interference, compositional drift, and catastrophic forgetting.
-The central goal of PromptCCZSL is to achieve a better balance between stability (retaining previously learned primitive and compositional knowledge) and plasticity (adapting to newly introduced compositions).
+The central goal of PromptCCZSL is to achieve a better balance between stability (retaining previously learned primitive and compositional knowledge) and plasticity (adapting to newly introduced compositions). The framework is evaluated on multiple CCZSL benchmarks and compared with existing VLM and non-VLM baselines.
 
 ![](cczsl-problem.png)
 
