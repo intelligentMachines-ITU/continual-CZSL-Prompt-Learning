@@ -5,11 +5,16 @@
 This project hosts the benchmark datasets and code for the implementation of **[PROMPT-BASED CONTINUAL COMPOSITIONAL ZERO-SHOT
 LEARNING](https://arxiv.org/pdf/2512.09172)** (arXiv).
 
+## Overview
+PromptCCZSL is a vision–language framework for Continual Compositional Zero-Shot Learning (CCZSL), where models incrementally learn evolving attribute–object compositions while retaining previously acquired knowledge.
+Unlike conventional continual learning, CCZSL allows attributes and objects to recur across sessions while their compositions change, creating challenges such as semantic interference, compositional drift, and catastrophic forgetting.
+
+![](cczsl-problem.png)
+
 ## Dataset
 We evaluate our method on three compositional zero-shot learning benchmarks: MIT-States, UT-Zappos, and C-GQA.
 
 ## Citations
-
 
 Please consider citing our paper in your publications if the project helps your research.
 
