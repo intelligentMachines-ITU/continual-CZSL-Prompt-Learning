@@ -471,6 +471,13 @@
       "line_count": 43
     },
     {
+      "path": "ut-zappos/session_2/cumulative/metadata_cumulative.t7",
+      "size": 4723189,
+      "md5": "7378bba69420c2a9f035fe2da5a6946d",
+      "kind": "metadata",
+      "entry_count": 29126
+    },
+    {
       "path": "ut-zappos/session_2/metadata_compositional-split-natural.t7",
       "size": 1486432,
       "md5": "5fa83b25040a0a9d87803c5a241232fb",

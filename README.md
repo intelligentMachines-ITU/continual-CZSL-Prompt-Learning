@@ -61,16 +61,11 @@ data cards below.)
 | ------- | ----- | ---- | -------------------------- | ----------------------- | ----------------- |
 | 0       |     8 |    6 | 24 / 7 / 9 / 34            | 8448 / 774 / 1444       | —                 |
 | 1       |    11 |    8 | 27 / 10 / 14 / 39          | 5436 / 1013 / 961       | 18,076            |
-| 2       |    15 |   10 | 32 / 13 / 13 / 43          | 9114 / 1427 / 509       | *(missing)*       |
+| 2       |    15 |   10 | 32 / 13 / 13 / 43          | 9114 / 1427 / 509       | 29,126            |
 
 > **Note (UT-Zappos small-N caveat).** UT-Zappos has very few pairs per
 > session (≤ 32 train pairs). Reported metrics on this dataset are more
 > sensitive to seed and split choice than on MIT-States or C-GQA.
->
-> **Note (UT-Zappos session_2 cumulative).** The cumulative metadata
-> file for `ut-zappos/session_2` is currently missing (see
-> `CCZL_benchmark/ut-zappos/session_2/cumulative/MISSING.md`). Session-
-> scoped experiments are unaffected.
 
 #### C-GQA
 
@@ -195,13 +190,21 @@ count for `.t7` metadata files). To verify a fresh clone:
 
 ```bash
 python scripts/validate_benchmark.py
-# OK: 71 files verified
+# OK: 72 files verified
 ```
 
 To regenerate the manifest after intentional benchmark changes:
 
 ```bash
 python scripts/build_manifest.py
+```
+
+To rebuild a cumulative metadata file from its session-scoped
+components (`cumulative_0..N = concat(session_0, ..., session_N)`):
+
+```bash
+python scripts/build_cumulative.py ut-zappos 2   # one file
+python scripts/build_cumulative.py --all         # every cumulative file
 ```
 
 Run `validate_benchmark.py` in CI or as a pre-push hook to catch
