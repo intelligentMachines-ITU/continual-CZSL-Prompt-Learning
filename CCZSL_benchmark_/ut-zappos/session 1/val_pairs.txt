@@ -1,0 +1,10 @@
+Canvas Shoes.Boat.Shoes
+Faux.Leather Boots.Mid-Calf
+Faux.Leather Shoes.Loafers
+Full.grain.leather Boots.Ankle
+Leather Shoes.Clogs.and.Mules
+Leather Shoes.Oxfords
+Nubuck Boots.Ankle
+Nubuck Shoes.Clogs.and.Mules
+Suede Shoes.Clogs.and.Mules
+Suede Shoes.Oxfords
