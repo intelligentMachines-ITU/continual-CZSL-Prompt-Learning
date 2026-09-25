@@ -85,7 +85,7 @@ under the `set` field. Treat session_0 as a base warm-start.
 ## Directory layout
 
 ```
-CCZL_benchmark/
+data/
 ├── mit-states/
 │   ├── session_0/
 │   │   ├── train_pairs.txt          # "attr obj" per line
@@ -185,7 +185,7 @@ Refer to the paper for the exact metric definitions used in the tables.
 ## Reproducibility and integrity
 
 `manifest.json` records the size, MD5, and structural count for every
-file under `CCZL_benchmark/`. Pair files carry a `line_count`. Metadata
+file under `data/`. Pair files carry a `line_count`. Metadata
 files carry an `entry_count`. To verify a fresh clone:
 
 ```bash

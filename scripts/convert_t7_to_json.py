@@ -1,6 +1,6 @@
 """Convert every `.t7` metadata file in the benchmark to a sibling `.json`.
 
-Each `.t7` in `CCZL_benchmark/` is a `torch.save(list[dict])` where each
+Each `.t7` in `data/` is a `torch.save(list[dict])` where each
 dict is `{image, attr, obj, set}`. This script emits a `.json` companion
 next to each `.t7` so downstream users can read the metadata without a
 Torch dependency.
@@ -9,7 +9,7 @@ The script is idempotent: safe to re-run. It skips files whose `.json`
 sibling is newer than the `.t7`.
 
 Usage:
-    python scripts/convert_t7_to_json.py [--force] [--root CCZL_benchmark]
+    python scripts/convert_t7_to_json.py [--force] [--root data]
 """
 
 from __future__ import annotations
@@ -37,9 +37,9 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--root",
-        default=Path(__file__).resolve().parent.parent / "CCZL_benchmark",
+        default=Path(__file__).resolve().parent.parent / "data",
         type=Path,
-        help="Benchmark root (default: CCZL_benchmark/ next to this script).",
+        help="Benchmark root (default: data/ next to this script).",
     )
     ap.add_argument(
         "--force",

@@ -1,6 +1,6 @@
 """Lightweight loaders for the CCZSL benchmark splits.
 
-The benchmark lives on disk under ``CCZL_benchmark/<dataset>/session_<N>/``
+The benchmark lives on disk under ``data/<dataset>/session_<N>/``
 with the layout:
 
     train_pairs.txt, val_pairs.txt, test_pairs.txt, all_pairs.txt
@@ -38,8 +38,8 @@ _DATASET_ALIASES: dict[str, str] = {
 
 
 def default_data_root() -> Path:
-    """Return the on-disk root of ``CCZL_benchmark/`` shipped with this repo."""
-    return Path(__file__).resolve().parent.parent / "CCZL_benchmark"
+    """Return the on-disk root of ``data/`` shipped with this repo."""
+    return Path(__file__).resolve().parent.parent / "data"
 
 
 def _canonical_dataset(name: str) -> str:
@@ -119,7 +119,7 @@ def load_session(
         Integer session index (0-based).
     data_root
         Optional override for the benchmark root. Defaults to the
-        ``CCZL_benchmark/`` directory shipped alongside this package.
+        ``data/`` directory shipped alongside this package.
     """
     root = Path(data_root) if data_root is not None else default_data_root()
     ds = _canonical_dataset(dataset)

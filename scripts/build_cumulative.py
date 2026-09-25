@@ -71,7 +71,7 @@ def main(argv: list[str] | None = None) -> int:
         "--data-root",
         default=default_data_root(),
         type=Path,
-        help="Benchmark root (default: CCZL_benchmark/ next to the package).",
+        help="Benchmark root (default: data/ next to the package).",
     )
     ap.add_argument("--all", action="store_true", help="Rebuild every cumulative file.")
     args = ap.parse_args(argv)

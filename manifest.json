@@ -1,5 +1,5 @@
 {
-  "root": "CCZL_benchmark",
+  "root": "data",
   "files": [
     {
       "path": "CGQA/session_0/all_pairs.txt",

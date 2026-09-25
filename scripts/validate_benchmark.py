@@ -1,4 +1,4 @@
-"""Verify every file under `CCZL_benchmark/` matches `manifest.json`.
+"""Verify every file under `data/` matches `manifest.json`.
 
 Exits 0 on success, nonzero if any file is missing, has the wrong size,
 wrong md5, wrong line count, or wrong torch entry count. This is the
@@ -6,7 +6,7 @@ guardrail that would have caught the .t7 truncation described in the
 LFS-setup commit.
 
 Usage:
-    python scripts/validate_benchmark.py [--root CCZL_benchmark] [--manifest manifest.json]
+    python scripts/validate_benchmark.py [--root data] [--manifest manifest.json]
 """
 
 from __future__ import annotations
@@ -73,7 +73,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--root",
-        default=Path(__file__).resolve().parent.parent / "CCZL_benchmark",
+        default=Path(__file__).resolve().parent.parent / "data",
         type=Path,
     )
     ap.add_argument(

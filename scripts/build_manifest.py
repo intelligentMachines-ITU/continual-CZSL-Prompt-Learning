@@ -1,6 +1,6 @@
 """Walk the benchmark and emit `manifest.json` with per-file integrity info.
 
-The manifest records, for every file under `CCZL_benchmark/`:
+The manifest records, for every file under `data/`:
 - `path` (relative to the benchmark root, forward-slash separated)
 - `size` in bytes
 - `md5` hash of the raw bytes on disk
@@ -15,7 +15,7 @@ file. This is the failure mode the original .t7 truncation would have
 exhibited.
 
 Usage:
-    python scripts/build_manifest.py [--root CCZL_benchmark] [--out manifest.json]
+    python scripts/build_manifest.py [--root data] [--out manifest.json]
 """
 
 from __future__ import annotations
@@ -83,7 +83,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--root",
-        default=Path(__file__).resolve().parent.parent / "CCZL_benchmark",
+        default=Path(__file__).resolve().parent.parent / "data",
         type=Path,
     )
     ap.add_argument(
