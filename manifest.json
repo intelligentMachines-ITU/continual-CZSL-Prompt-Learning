@@ -1,0 +1,502 @@
+{
+  "root": "CCZL_benchmark",
+  "files": [
+    {
+      "path": "CGQA/session_0/all_pairs.txt",
+      "size": 42126,
+      "md5": "68c5b6db5ebc1533ed7a772c4bdc5f79",
+      "kind": "pair-list",
+      "line_count": 3305
+    },
+    {
+      "path": "CGQA/session_0/metadata_compositional-split-natural.t7",
+      "size": 896096,
+      "md5": "2f5b040d2f0c3e662b62109bcc15005e",
+      "kind": "metadata",
+      "entry_count": 14718
+    },
+    {
+      "path": "CGQA/session_1/all_pairs.txt",
+      "size": 8501,
+      "md5": "d474d7a11234db8add56970dd05b9cfb",
+      "kind": "pair-list",
+      "line_count": 678
+    },
+    {
+      "path": "CGQA/session_1/cumulative/metadata_cumulative.t7",
+      "size": 1094228,
+      "md5": "e1b6f038ed4d6fa14a1d27409ad01d42",
+      "kind": "metadata",
+      "entry_count": 17196
+    },
+    {
+      "path": "CGQA/session_1/metadata_compositional-split-natural.t7",
+      "size": 152544,
+      "md5": "f0337de59b17c1a1ed17d438c011b4c9",
+      "kind": "metadata",
+      "entry_count": 2478
+    },
+    {
+      "path": "CGQA/session_1/test_pairs.txt",
+      "size": 2284,
+      "md5": "a5ea067e5f0cbf2b185fd195a2d4fdc3",
+      "kind": "pair-list",
+      "line_count": 172
+    },
+    {
+      "path": "CGQA/session_1/train_pairs.txt",
+      "size": 6704,
+      "md5": "c88254d1b2f65a89a4312abb074662e1",
+      "kind": "pair-list",
+      "line_count": 491
+    },
+    {
+      "path": "CGQA/session_1/val_pairs.txt",
+      "size": 2248,
+      "md5": "c324b3f335e64fd3ca464cd5f31e6a8c",
+      "kind": "pair-list",
+      "line_count": 168
+    },
+    {
+      "path": "CGQA/session_2/all_pairs.txt",
+      "size": 14182,
+      "md5": "d0ef8ad37c542b08aca5545f79b05008",
+      "kind": "pair-list",
+      "line_count": 1093
+    },
+    {
+      "path": "CGQA/session_2/cumulative/metadata_cumulative.t7",
+      "size": 1813944,
+      "md5": "3a47ef66513f742d4149a8cf4997f211",
+      "kind": "metadata",
+      "entry_count": 26308
+    },
+    {
+      "path": "CGQA/session_2/metadata_compositional-split-natural.t7",
+      "size": 549472,
+      "md5": "b0800aa0349f5ad841ae113a3369d099",
+      "kind": "metadata",
+      "entry_count": 9112
+    },
+    {
+      "path": "CGQA/session_2/test_pairs.txt",
+      "size": 3688,
+      "md5": "60b483d43d2940de4135bda5765fb3a8",
+      "kind": "pair-list",
+      "line_count": 265
+    },
+    {
+      "path": "CGQA/session_2/train_pairs.txt",
+      "size": 10769,
+      "md5": "3d1b56f677d65f9bfbdc4b184b869369",
+      "kind": "pair-list",
+      "line_count": 772
+    },
+    {
+      "path": "CGQA/session_2/val_pairs.txt",
+      "size": 4928,
+      "md5": "4078a7d6cbbea4f3643a3705527eeed2",
+      "kind": "pair-list",
+      "line_count": 358
+    },
+    {
+      "path": "CGQA/session_3/all_pairs.txt",
+      "size": 14610,
+      "md5": "d37e68b8c36d32b35a990821aca1a56f",
+      "kind": "pair-list",
+      "line_count": 1131
+    },
+    {
+      "path": "CGQA/session_3/cumulative/metadata_cumulative.t7",
+      "size": 2371260,
+      "md5": "1c74cf0db35505928804a02ff9c831e5",
+      "kind": "metadata",
+      "entry_count": 33351
+    },
+    {
+      "path": "CGQA/session_3/metadata_compositional-split-natural.t7",
+      "size": 430752,
+      "md5": "edd67814bab050bb68b493784b84c3a3",
+      "kind": "metadata",
+      "entry_count": 7043
+    },
+    {
+      "path": "CGQA/session_3/test_pairs.txt",
+      "size": 3842,
+      "md5": "d48f4cb136c5ccc290d2bed429f6cc78",
+      "kind": "pair-list",
+      "line_count": 275
+    },
+    {
+      "path": "CGQA/session_3/train_pairs.txt",
+      "size": 11654,
+      "md5": "ac8fbc4c7d06643746d7a7651d79ab87",
+      "kind": "pair-list",
+      "line_count": 836
+    },
+    {
+      "path": "CGQA/session_3/val_pairs.txt",
+      "size": 4964,
+      "md5": "b46adcd63a563819ff9ca88e239e0882",
+      "kind": "pair-list",
+      "line_count": 366
+    },
+    {
+      "path": "CGQA/session_4/all_pairs.txt",
+      "size": 10557,
+      "md5": "93641fd37bdfa854bcdf50ef6a4c70e8",
+      "kind": "pair-list",
+      "line_count": 776
+    },
+    {
+      "path": "CGQA/session_4/cumulative/metadata_cumulative.t7",
+      "size": 2647680,
+      "md5": "5ee3a76b3b01047ec14e7dfcd021457e",
+      "kind": "metadata",
+      "entry_count": 36760
+    },
+    {
+      "path": "CGQA/session_4/metadata_compositional-split-natural.t7",
+      "size": 212768,
+      "md5": "d0bf5048b948eb7d08155933b806b1c6",
+      "kind": "metadata",
+      "entry_count": 3409
+    },
+    {
+      "path": "CGQA/session_4/test_pairs.txt",
+      "size": 2472,
+      "md5": "bb3d6e0604318432ccf9594ad8147e6c",
+      "kind": "pair-list",
+      "line_count": 166
+    },
+    {
+      "path": "CGQA/session_4/train_pairs.txt",
+      "size": 8275,
+      "md5": "feaa80b2a3f285cd009660bd670de622",
+      "kind": "pair-list",
+      "line_count": 562
+    },
+    {
+      "path": "CGQA/session_4/val_pairs.txt",
+      "size": 3168,
+      "md5": "9fd701ff175e00078a4cfb16a6d409a3",
+      "kind": "pair-list",
+      "line_count": 225
+    },
+    {
+      "path": "CGQA/session_5/all_pairs.txt",
+      "size": 10044,
+      "md5": "8d6c7d2f8818e949d292d84dc5a4bc0d",
+      "kind": "pair-list",
+      "line_count": 784
+    },
+    {
+      "path": "CGQA/session_5/cumulative/metadata_cumulative.t7",
+      "size": 2852356,
+      "md5": "f9ec68c079d12241f8b6d8c40759b4ce",
+      "kind": "metadata",
+      "entry_count": 39298
+    },
+    {
+      "path": "CGQA/session_5/metadata_compositional-split-natural.t7",
+      "size": 159008,
+      "md5": "c2413483cec42aee56ee5e93564c0293",
+      "kind": "metadata",
+      "entry_count": 2538
+    },
+    {
+      "path": "CGQA/session_5/test_pairs.txt",
+      "size": 2791,
+      "md5": "19df31c25c19c9e0fae35f67a515bc75",
+      "kind": "pair-list",
+      "line_count": 203
+    },
+    {
+      "path": "CGQA/session_5/train_pairs.txt",
+      "size": 7454,
+      "md5": "a801121db48b583b9eccbbbb8b79e73c",
+      "kind": "pair-list",
+      "line_count": 539
+    },
+    {
+      "path": "CGQA/session_5/val_pairs.txt",
+      "size": 2942,
+      "md5": "bafa564c162c8fa717800b2c4baa1729",
+      "kind": "pair-list",
+      "line_count": 217
+    },
+    {
+      "path": "mit-states/session_0/all_pairs.txt",
+      "size": 3268,
+      "md5": "af1ef0b7fdbd3d87215ba1d5c632c27a",
+      "kind": "pair-list",
+      "line_count": 237
+    },
+    {
+      "path": "mit-states/session_0/metadata_compositional-split-natural.t7",
+      "size": 1002188,
+      "md5": "1112ddac950e2c9e4f559f9cf4333d96",
+      "kind": "metadata",
+      "entry_count": 6160
+    },
+    {
+      "path": "mit-states/session_0/test_pairs.txt",
+      "size": 1252,
+      "md5": "2cb666e5ec9f9b97bdc51fa22b1790d6",
+      "kind": "pair-list",
+      "line_count": 90
+    },
+    {
+      "path": "mit-states/session_0/train_pairs.txt",
+      "size": 2213,
+      "md5": "abee05a1dc62c393e6e02011bca887bc",
+      "kind": "pair-list",
+      "line_count": 161
+    },
+    {
+      "path": "mit-states/session_0/val_pairs.txt",
+      "size": 1059,
+      "md5": "731a91b66709bc70bad00986a6dc0c9a",
+      "kind": "pair-list",
+      "line_count": 76
+    },
+    {
+      "path": "mit-states/session_1/all_pairs.txt",
+      "size": 5651,
+      "md5": "11965c2b12fd045345d4b1b271932e4b",
+      "kind": "pair-list",
+      "line_count": 439
+    },
+    {
+      "path": "mit-states/session_1/cumulative/metadata_cumulative.t7",
+      "size": 2004583,
+      "md5": "c7058c4bad9a83d9b46484d8729fa406",
+      "kind": "metadata",
+      "entry_count": 12320
+    },
+    {
+      "path": "mit-states/session_1/metadata_compositional-split-natural.t7",
+      "size": 1982348,
+      "md5": "066373dae2c1a859681ce3f47c8b00ad",
+      "kind": "metadata",
+      "entry_count": 12344
+    },
+    {
+      "path": "mit-states/session_1/test_pairs.txt",
+      "size": 2434,
+      "md5": "4eb78594cbb8bdedf8725b4624c98581",
+      "kind": "pair-list",
+      "line_count": 187
+    },
+    {
+      "path": "mit-states/session_1/train_pairs.txt",
+      "size": 3577,
+      "md5": "facb7108c67eb59c48cff62d7defcc32",
+      "kind": "pair-list",
+      "line_count": 278
+    },
+    {
+      "path": "mit-states/session_1/val_pairs.txt",
+      "size": 1845,
+      "md5": "eaa07c1b534985f6758721a45566922d",
+      "kind": "pair-list",
+      "line_count": 145
+    },
+    {
+      "path": "mit-states/session_2/all_pairs.txt",
+      "size": 7528,
+      "md5": "da1c3e78e07a07db48e342f5ec8fb305",
+      "kind": "pair-list",
+      "line_count": 565
+    },
+    {
+      "path": "mit-states/session_2/cumulative/metadata_cumulative.t7",
+      "size": 5545241,
+      "md5": "6bf5fe65f6440c1f62d280bab4b7f192",
+      "kind": "metadata",
+      "entry_count": 34422
+    },
+    {
+      "path": "mit-states/session_2/metadata_compositional-split-natural.t7",
+      "size": 2560460,
+      "md5": "cbdc303c13a62a6cef449e338f77a848",
+      "kind": "metadata",
+      "entry_count": 15918
+    },
+    {
+      "path": "mit-states/session_2/test_pairs.txt",
+      "size": 3006,
+      "md5": "951e350d6a079fb7c76b35a6f20c8dbb",
+      "kind": "pair-list",
+      "line_count": 229
+    },
+    {
+      "path": "mit-states/session_2/train_pairs.txt",
+      "size": 4801,
+      "md5": "2f6ec24bd8d2d85ac93653363b2b9fa7",
+      "kind": "pair-list",
+      "line_count": 361
+    },
+    {
+      "path": "mit-states/session_2/val_pairs.txt",
+      "size": 2191,
+      "md5": "3f04888e2225babb18afd600fcd043b4",
+      "kind": "pair-list",
+      "line_count": 164
+    },
+    {
+      "path": "mit-states/session_3/all_pairs.txt",
+      "size": 9516,
+      "md5": "71bc7cf8b122bb874061f5e1d5050ac9",
+      "kind": "pair-list",
+      "line_count": 721
+    },
+    {
+      "path": "mit-states/session_3/cumulative/metadata_cumulative.t7",
+      "size": 8681183,
+      "md5": "c0d0a48d1740b1c8062c74ab9b6b18af",
+      "kind": "metadata",
+      "entry_count": 53753
+    },
+    {
+      "path": "mit-states/session_3/metadata_compositional-split-natural.t7",
+      "size": 3136012,
+      "md5": "89ecc46df14f55d0e74ae58ceca1dd56",
+      "kind": "metadata",
+      "entry_count": 19331
+    },
+    {
+      "path": "mit-states/session_3/test_pairs.txt",
+      "size": 3901,
+      "md5": "280ee4e892938092f7d2e08fec8689ab",
+      "kind": "pair-list",
+      "line_count": 294
+    },
+    {
+      "path": "mit-states/session_3/train_pairs.txt",
+      "size": 6079,
+      "md5": "97f7aae946de3e639b6c49633ec0913f",
+      "kind": "pair-list",
+      "line_count": 462
+    },
+    {
+      "path": "mit-states/session_3/val_pairs.txt",
+      "size": 2799,
+      "md5": "37674ef7c5dc1978c255a7ae8cd8fb8a",
+      "kind": "pair-list",
+      "line_count": 215
+    },
+    {
+      "path": "ut-zappos/session_0/all_pairs.txt",
+      "size": 914,
+      "md5": "a986c4fd5fab16c3389f424cf17d9050",
+      "kind": "pair-list",
+      "line_count": 34
+    },
+    {
+      "path": "ut-zappos/session_0/metadata_compositional-split-natural.t7",
+      "size": 1721312,
+      "md5": "54706035b76357e2a4756f63432ce05d",
+      "kind": "metadata",
+      "entry_count": 10666
+    },
+    {
+      "path": "ut-zappos/session_0/test_pairs.txt",
+      "size": 209,
+      "md5": "c455f5ed666d58fee7d19af1fc830185",
+      "kind": "pair-list",
+      "line_count": 9
+    },
+    {
+      "path": "ut-zappos/session_0/train_pairs.txt",
+      "size": 692,
+      "md5": "fe65a134e73ede83581be1de0cd1785f",
+      "kind": "pair-list",
+      "line_count": 24
+    },
+    {
+      "path": "ut-zappos/session_0/val_pairs.txt",
+      "size": 190,
+      "md5": "a8123bd0d78dca12794d18f6d93d6264",
+      "kind": "pair-list",
+      "line_count": 7
+    },
+    {
+      "path": "ut-zappos/session_1/all_pairs.txt",
+      "size": 1015,
+      "md5": "7a8f96362eba104ae3e1ccc3e6a36546",
+      "kind": "pair-list",
+      "line_count": 39
+    },
+    {
+      "path": "ut-zappos/session_1/cumulative/metadata_cumulative.t7",
+      "size": 2994288,
+      "md5": "fe6ecd5377d406166e10697af065bb30",
+      "kind": "metadata",
+      "entry_count": 18076
+    },
+    {
+      "path": "ut-zappos/session_1/metadata_compositional-split-natural.t7",
+      "size": 1123424,
+      "md5": "ed2a0b93f04e2184f7742e7f9a6b0b60",
+      "kind": "metadata",
+      "entry_count": 7410
+    },
+    {
+      "path": "ut-zappos/session_1/test_pairs.txt",
+      "size": 331,
+      "md5": "5e5539224894683a566d3cd7774ed1fb",
+      "kind": "pair-list",
+      "line_count": 14
+    },
+    {
+      "path": "ut-zappos/session_1/train_pairs.txt",
+      "size": 717,
+      "md5": "c5300d351314d3b37e2c767faf282182",
+      "kind": "pair-list",
+      "line_count": 27
+    },
+    {
+      "path": "ut-zappos/session_1/val_pairs.txt",
+      "size": 257,
+      "md5": "1f204e4686aa5085e4f91e2658c0cabc",
+      "kind": "pair-list",
+      "line_count": 10
+    },
+    {
+      "path": "ut-zappos/session_2/all_pairs.txt",
+      "size": 942,
+      "md5": "accd8672fd96902bc57fc5eae4533de6",
+      "kind": "pair-list",
+      "line_count": 43
+    },
+    {
+      "path": "ut-zappos/session_2/metadata_compositional-split-natural.t7",
+      "size": 1486432,
+      "md5": "5fa83b25040a0a9d87803c5a241232fb",
+      "kind": "metadata",
+      "entry_count": 11050
+    },
+    {
+      "path": "ut-zappos/session_2/test_pairs.txt",
+      "size": 287,
+      "md5": "8cebe45558111204dc4c980ce137a2e8",
+      "kind": "pair-list",
+      "line_count": 13
+    },
+    {
+      "path": "ut-zappos/session_2/train_pairs.txt",
+      "size": 710,
+      "md5": "8c270d383a047e59d31a1840b267a60c",
+      "kind": "pair-list",
+      "line_count": 32
+    },
+    {
+      "path": "ut-zappos/session_2/val_pairs.txt",
+      "size": 302,
+      "md5": "0335cb0a4319aca228a9bc59a5407f88",
+      "kind": "pair-list",
+      "line_count": 13
+    }
+  ]
+}
