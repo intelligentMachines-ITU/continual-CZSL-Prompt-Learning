@@ -1,0 +1,54 @@
+# Prompt-CCZSL: Prompt-Based Continual Compositional Zero-Shot Learning
+
+* **Title**: **[Prompt-Based Continual Compositional Zero-Shot Learning](https://arxiv.org/pdf/2512.09172)**
+* **Authors**: Sauda Maryam, Sara Nadeem, Faisal Z. Qureshi, Mohsen Ali
+* **Institutes**: Information Technology University Lahore
+* **More details**: [[arXiv]](https://arxiv.org/pdf/2512.09172) | [[Code]](https://github.com/Sauda123/Prompt-CCZSL)
+
+---
+
+## Overview
+
+## Methodology Overview
+
+<p align="center">
+  <img src="assets/methodology.png" alt="Prompt-CCZSL Methodology" width="800"/>
+</p>
+
+**Figure 1:** Overview of the proposed Prompt-CCZSL framework for continual compositional zero-shot learning.
+
+With a focus on enabling stable and scalable learning of compositional concepts over time, we introduce Prompt-based Continual Compositional Zero-Shot Learning (Prompt-CCZSL), a novel framework that integrates continual learning principles into vision–language models for incremental acquisition of attribute–object compositions. Our approach formulates compositional learning through learnable prompts that are updated across sessions via a session-aware compositional fusion mechanism, allowing the model to adapt to newly introduced attributes, objects, and compositions while preserving previously learned semantic structure. To further mitigate catastrophic forgetting, we propose a continual adaptation strategy based on multi-teacher knowledge distillation, complemented by a Cosine Anchor Alignment Loss that enforces semantic consistency across sessions. Additionally, orthogonality and intra-session diversification constraints promote representation separability and enriched session-specific semantics in the prompt space. Extensive experiments demonstrate that Prompt-CCZSL achieves strong continual compositional generalization and significantly outperforms competitive CCZSL baselines under constrained continual settings.
+
+---
+
+## Results
+
+## Main Results
+
+<p align="center">
+  <img src="assets/quantitative_results.png" alt="Prompt-CCZSL Quantitative Results" width="800"/>
+</p>
+
+**Table 1:** Performance comparison with state-of-the-art CZSL methods under the continual CZSL protocol. We report session-wise AUC, average AUC (Avg), and final improvement (Final). Results are shown for UT-Zappos and C-GQA datasets.
+
+## Qualitative Results
+
+<p align="center">
+  <img src="assets/UtZappos.png" alt="Prompt-CCZSL Qualitative Results" width="800"/>
+</p>
+
+**Figure 2:** Session-wise qualitative results for zero-shot compositional generalization on UT-Zappos dataset.
+<p align="center">
+  <img src="assets/cgqa.png" alt="Prompt-CCZSL Qualitative Results" width="800"/>
+</p>
+
+**Figure 2:** Session-wise qualitative results for zero-shot compositional generalization on C-GQA datasets.
+<p align="center">
+  <img src="assets/mitstates.png" alt="Prompt-CCZSL Qualitative Results" width="800"/>
+</p>
+
+**Figure 2:** Session-wise qualitative results for zero-shot compositional generalization on Mit-States datasets.
+
+---
+
+## Code Structure
