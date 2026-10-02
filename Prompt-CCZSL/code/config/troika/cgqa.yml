@@ -1,14 +1,15 @@
 model:
-  model_name: PCCZSL
+  model_name: troika
   prompt_template: ["a photo of x x", "a photo of x", "a photo of x"]
   ctx_init: ["a photo of ", "a photo of ", "a photo of "]
   clip_model: "ViT-L/14"
-  # clip_arch: 
+  # clip_arch:
   cmt_layers: 2
   init_lamda: 0.1
   cross_attn_dropout: 0
   adapter_dim: 64
   adapter_dropout: 0.1
+
   # branch
   pair_loss_weight: 1.0
   pair_inference_weight: 1.0
@@ -16,10 +17,11 @@ model:
   attr_inference_weight: 1.0
   obj_loss_weight: 0.1
   obj_inference_weight: 1.0
-  
+
+
 train:
   dataset: cgqa
-  # dataset_path: 
+  # dataset_path:
   optimizer: Adam
   scheduler: StepLR
   step_size: 5
@@ -28,23 +30,138 @@ train:
   attr_dropout: 0
   weight_decay: 0.00001
   context_length: 8
-  train_batch_size: 16
+  train_batch_size: 4
   gradient_accumulation_steps: 1
-  # seed: 
+  # seed:
   epochs: 15
   epoch_start: 0
-  # save_path: 
+  # save_path:
   val_metric: AUC
   save_final_model: True
   # load_model: False     # False or model path
 
+
 test:
   eval_batch_size: 4
   open_world: False
-  # load_model: 
+  # load_model:
   topk: 1
   text_encoder_batch_size: 1024
   # threshold: 0.4
   threshold_trials: 50
   bias: 0.001
   text_first: True
+
+
+# =========================
+# CGQA Continual Sessions
+# =========================
+
+Session1:
+  T_ATTRS: 233
+  T_OBJS: 363
+  S_ATTRS: 268
+  S_OBJS: 421
+  T_SHAPE: 596
+  S_SHAPE: 689
+  T_PAIRS: 2392
+  L_CAL: 0.05
+  L_ORTHO: 0.05
+  L_DIV: 0.005
+  split_n: 2392
+  SAwM2F: "True"
+  TRAIN_PAIR_LEN: 2883
+
+  T_ATTR_IDX: "updated_attr2idx_session0"
+  T_OBJ_IDX: "updated_obj2idx_session0"
+  S_ATTR_IDX: "updated_attr2idx_session1"
+  S_OBJ_IDX: "updated_obj2idx_session1"
+  S_PAIR_IDX: "updated_pair2idx_session1"
+
+
+Session2:
+  T_ATTRS: 268
+  T_OBJS: 421
+  S_ATTRS: 300
+  S_OBJS: 488
+  T_SHAPE: 689
+  S_SHAPE: 788
+  T_PAIRS: 2883
+  L_CAL: 0.05
+  L_ORTHO: 0.05
+  L_DIV: 0.005
+  split_n: 2883
+  SAwM2F: "True"
+  TRAIN_PAIR_LEN: 3655
+
+  T_ATTR_IDX: "updated_attr2idx_session1"
+  T_OBJ_IDX: "updated_obj2idx_session1"
+  S_ATTR_IDX: "updated_attr2idx_session2"
+  S_OBJ_IDX: "updated_obj2idx_session2"
+  S_PAIR_IDX: "updated_pair2idx_session2"
+
+
+Session3:
+  T_ATTRS: 300
+  T_OBJS: 488
+  S_ATTRS: 336
+  S_OBJS: 552
+  T_SHAPE: 788
+  S_SHAPE: 888
+  T_PAIRS: 3655
+  L_CAL: 0.05
+  L_ORTHO: 0.05
+  L_DIV: 0.005
+  split_n: 3655
+  SAwM2F: "True"
+  TRAIN_PAIR_LEN: 4491
+
+  T_ATTR_IDX: "updated_attr2idx_session2"
+  T_OBJ_IDX: "updated_obj2idx_session2"
+  S_ATTR_IDX: "updated_attr2idx_session3"
+  S_OBJ_IDX: "updated_obj2idx_session3"
+  S_PAIR_IDX: "updated_pair2idx_session3"
+
+
+Session4:
+  T_ATTRS: 336
+  T_OBJS: 552
+  S_ATTRS: 375
+  S_OBJS: 614
+  T_SHAPE: 888
+  S_SHAPE: 989
+  T_PAIRS: 4491
+  L_CAL: 0.05
+  L_ORTHO: 0.05
+  L_DIV: 0.005
+  split_n: 4491
+  SAwM2F: "True"
+  TRAIN_PAIR_LEN: 5053
+
+  T_ATTR_IDX: "updated_attr2idx_session3"
+  T_OBJ_IDX: "updated_obj2idx_session3"
+  S_ATTR_IDX: "updated_attr2idx_session4"
+  S_OBJ_IDX: "updated_obj2idx_session4"
+  S_PAIR_IDX: "updated_pair2idx_session4"
+
+
+Session5:
+  T_ATTRS: 375
+  T_OBJS: 614
+  S_ATTRS: 413
+  S_OBJS: 674
+  T_SHAPE: 989
+  S_SHAPE: 1087
+  T_PAIRS: 5053
+  L_CAL: 0.05
+  L_ORTHO: 0.05
+  L_DIV: 0.005
+  split_n: 5053
+  SAwM2F: "True"
+  TRAIN_PAIR_LEN: 5592
+
+  T_ATTR_IDX: "updated_attr2idx_session4"
+  T_OBJ_IDX: "updated_obj2idx_session4"
+  S_ATTR_IDX: "updated_attr2idx_session5"
+  S_OBJ_IDX: "updated_obj2idx_session5"
+  S_PAIR_IDX: "updated_pair2idx_session5"
