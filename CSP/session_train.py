@@ -245,6 +245,9 @@ if __name__ == "__main__":
         type=str
     )
 
+    parser.add_argument("--alpha", help="alpha for KD", default=0.65, type=float)
+
+
     config = parser.parse_args()
 
     # set the seed value
