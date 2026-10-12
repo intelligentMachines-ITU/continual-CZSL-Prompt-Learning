@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.venv/
+env/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Data, datasets, benchmark splits
+code/data/
+code/download_data/
+data/
+exit/
+*.t7
+*.tz
+*.npy
+*.npz
+*.h5
+*.pkl
+*.zip
+*.tar
+*.tar.gz
+
+# Models / checkpoints
+code/model/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Logs / outputs
+*.log
+logs/
+wandb/
+runs/
+output.json
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.webp
+
+# Installers / tools
+Miniconda3-*.sh
+*.jar
