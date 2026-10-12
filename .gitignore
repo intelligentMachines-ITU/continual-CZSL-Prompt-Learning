@@ -13,9 +13,11 @@ venv/
 .idea/
 
 # Data, datasets, benchmark splits
-code/data/
+code/data/*
+!code/data/ComPIL/
+code/data/ComPIL/generated/
 code/download_data/
-data/
+/data/
 exit/
 *.t7
 *.tz
@@ -55,3 +57,4 @@ output.json
 # Installers / tools
 Miniconda3-*.sh
 *.jar
+code/save_models/
