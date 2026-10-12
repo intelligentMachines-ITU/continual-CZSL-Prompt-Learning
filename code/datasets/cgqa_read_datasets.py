@@ -3,7 +3,7 @@ import os
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
 DATASET_PATHS = {
-    "cgqa": os.path.join(DIR_PATH, "/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code/download_data/CCZSL_benchmark/CGQA"),
+    "cgqa": os.path.join(DIR_PATH, "../download_data/CCZSL_benchmark/CGQA"),
     }
 
 selected_session_g_pair2_idx = "cgqa-s4"        #max session-4 we train, used for GT Ids. 

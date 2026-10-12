@@ -3,7 +3,7 @@ import os
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
 DATASET_PATHS = {
-    "utzappos": os.path.join(DIR_PATH, "/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code/download_data/CCZSL_benchmark/ut-zappos/"), #set path of dataset
+    "utzappos": os.path.join(DIR_PATH, "../download_data/CCZSL_benchmark/ut-zappos/"), #set path of dataset
     }
 
 selected_session_g_pair2_idx = "utzappos-s2"      #max session-2 we train, used for GT Ids. 

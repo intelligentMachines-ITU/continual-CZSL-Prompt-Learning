@@ -9,6 +9,6 @@ DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 # for sessions cgqa-compil-s0 .. cgqa-compil-s4.
 globals().update(build_config(
     "cgqa-compil",
-    images_root="/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code/download_data/CCZSL_benchmark/CGQA/",  # dir holding images/
+    images_root=os.path.join(DIR_PATH, "../download_data/CCZSL_benchmark/CGQA/"),  # dir holding images/
     generated_dir=os.path.join(DIR_PATH, "../data/ComPIL/generated/cgqa"),
 ))

@@ -9,6 +9,6 @@ DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 # for sessions mit-states-compil-s0 .. mit-states-compil-s4.
 globals().update(build_config(
     "mit-states-compil",
-    images_root="/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code/download_data/CCZSL_benchmark/mit-states/",  # dir holding images/
+    images_root=os.path.join(DIR_PATH, "../download_data/CCZSL_benchmark/mit-states/"),  # dir holding images/
     generated_dir=os.path.join(DIR_PATH, "../data/ComPIL/generated/mit-states"),
 ))

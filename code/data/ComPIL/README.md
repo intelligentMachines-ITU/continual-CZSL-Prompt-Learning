@@ -24,11 +24,11 @@ The raw splits contain pair lists only, with no images or metadata. Both dataset
 # C-GQA
 python data/ComPIL/build_compil.py \
   --compil_dir data/ComPIL/c-gqa-compil \
-  --t7 "/home/vclab-hafiz/saranadeem_itu_pk/CCZSLS1UtZappos/code/download_data/data/CGQA/meta/012345metadata_compositional-split-natural.t7" \
+  --t7 "<CGQA_META_DIR>/012345metadata_compositional-split-natural.t7" \
   --out_dir data/ComPIL/generated/cgqa
 
 # MIT-States: merge the four PromptCCZSL session metadata files
-M="/home/vclab-hafiz/saranadeem_itu_pk/CCZSLS1UtZappos/code/download_data/data copy/mit-states"
+M="download_data/CCZSL_benchmark/mit-states"
 python data/ComPIL/build_compil.py \
   --compil_dir data/ComPIL/mit-states-compil \
   --t7 "$M/session 0/metadata_compositional-split-natural.t7" \

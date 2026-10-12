@@ -3,7 +3,7 @@ import os
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
 DATASET_PATHS = {
-    "mit-states": os.path.join(DIR_PATH, "/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code/download_data/CCZSL_benchmark/mit-states/"), #set path of dataset
+    "mit-states": os.path.join(DIR_PATH, "../download_data/CCZSL_benchmark/mit-states/"), #set path of dataset
     }
 
 selected_session_g_pair2_idx = "mit-states-s3"      #max session-4 we train, used for GT Ids. 

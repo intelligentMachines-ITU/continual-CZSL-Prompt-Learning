@@ -119,9 +119,10 @@ the PromptCCZSL benchmark. `data/ComPIL/README.md` gives the full commands.
 
 ### Set the data paths
 
-The dataset paths are set in `code/datasets/*_read_datasets.py`
-(`DATASET_PATHS` for PromptCCZSL, `images_root` for ComPIL). Change them to
-your own paths before training.
+By default the code reads data from `code/download_data/CCZSL_benchmark/<dataset>/`
+(relative to the repository). To use another location, either symlink it
+there or change `DATASET_PATHS` (PromptCCZSL) and `images_root` (ComPIL) in
+`code/datasets/*_read_datasets.py`.
 
 ## PromptCCZSL benchmark
 

@@ -5,7 +5,7 @@
 # conda activate troika
 
 # Base path
-BASE=/home/vclab-hafiz/saranadeem_itu_pk/PromptCCZSL/code
+BASE="$(cd "$(dirname "$0")/.." && pwd)"   # code/ folder of this checkout
 
 python -u $BASE/train.py \
     --clip_arch $BASE/model/ViT-L-14.pt \
