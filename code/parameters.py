@@ -43,6 +43,6 @@ parser.add_argument("--session", help="session (task) to train/evaluate, e.g. cg
 parser.add_argument("--teacher_session", help="previous session, used for distillation", type=str, default=None)
 parser.add_argument("--alpha", help="distillation loss weight", type=float, default=0.65)
 # session_train.py prompt regularizers (defaults are the values previously hard-coded there)
-parser.add_argument("--L_CAL", help="weight of the cosine anchor to the teacher's soft_att_obj", type=float, default=0.05)
+parser.add_argument("--L_CAL", help="weight of the cosine anchor to the teacher's soft_att_obj", type=float, default=0.1)
 parser.add_argument("--L_ORTHO", help="weight of the new-vs-old prompt orthogonality loss", type=float, default=0.05)
 parser.add_argument("--L_DIV", help="weight of the new-prompt diversity loss", type=float, default=0.005)

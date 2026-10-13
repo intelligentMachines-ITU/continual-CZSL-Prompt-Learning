@@ -30,7 +30,6 @@ exit/
 *.tar.gz
 
 # Models / checkpoints
-code/model/
 *.pt
 *.pth
 *.ckpt

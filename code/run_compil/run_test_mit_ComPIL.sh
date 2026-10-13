@@ -22,3 +22,5 @@ for k in $TASKS; do
     --session $DATASET-s$k \
     --teacher_session $DATASET-s$t 2>&1 | tee $OUT/session$k/s${k}_test.log
 done
+
+# python run_compil/summarize_compil.py mit  > data/model/ComPIL/mit/summary.md

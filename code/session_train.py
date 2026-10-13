@@ -357,7 +357,11 @@ if __name__ == "__main__":
     # set the seed value
     set_seed(config.seed)
 
-    paths = import_dataset_paths(config.dataset)        
+    paths = import_dataset_paths(config.dataset)      
+    # PCCZSL session-aware cross-attention: only the current session's new pairs are updated
+    config.TRAIN_PAIR_LEN = paths.TRAIN_PAIRS[config.session]           # e.g. 536 at mit-states-compil-s1
+    config.split_n = paths.TRAIN_PAIRS[config.teacher_session]          # e.g. 290 (task 0's pairs)
+    config.SAwM2F = "True" 
 
     dataset_path = paths.DATASET_PATHS[config.dataset]
 
