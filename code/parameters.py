@@ -46,3 +46,5 @@ parser.add_argument("--alpha", help="distillation loss weight", type=float, defa
 parser.add_argument("--L_CAL", help="weight of the cosine anchor to the teacher's soft_att_obj", type=float, default=0.1)
 parser.add_argument("--L_ORTHO", help="weight of the new-vs-old prompt orthogonality loss", type=float, default=0.05)
 parser.add_argument("--L_DIV", help="weight of the new-prompt diversity loss", type=float, default=0.005)
+parser.add_argument("--use_mrl", help="add Matryoshka loss (session 0)", action="store_true")
+parser.add_argument("--mrl_weight", help="weight of the Matryoshka loss", type=float, default=0.1)

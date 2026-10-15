@@ -455,6 +455,7 @@ class Troika(nn.Module):
        
         
         logits = list()
+        self.mrl_feats = [] if getattr(self.config, "use_mrl", False) else None
       
         for i_element in range(self.token_ids.shape[0]):
                    
@@ -482,6 +483,10 @@ class Troika(nn.Module):
             cmt_text_features = cmt_text_features / cmt_text_features.norm(
                 dim=-1, keepdim=True
             )
+
+            if self.mrl_feats is not None:
+                self.mrl_feats.append((batch_img_features[i_element], cmt_text_features))
+
 
             logits.append(
                 torch.einsum(

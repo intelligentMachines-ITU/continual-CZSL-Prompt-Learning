@@ -18,6 +18,9 @@ from dataset import CompositionDataset
 from utils import *
 import logging
 
+from MDL import MatryoshkaClassificationLoss
+
+
 def import_dataset_paths(dataset=None):
     if dataset == 'cgqa':
         from datasets import cgqa_read_datasets
@@ -69,6 +72,10 @@ def train_model(model, optimizer, config, train_dataset, val_dataset, test_datas
                                 
     train_losses = []
 
+    # nested dims follow the backbone's embedding size: 768 for ViT-L/14, 512 for ViT-B/16 and B/32
+    D = model.clip.visual.output_dim
+    mrl_fn = MatryoshkaClassificationLoss(dims=(D // 8, D // 4, D // 2, D)) if config.use_mrl else None
+
     for i in range(config.epoch_start, config.epochs):
         progress_bar = tqdm.tqdm(
             total=len(train_dataloader), desc="epoch % 3d" % (i + 1)
@@ -81,6 +88,16 @@ def train_model(model, optimizer, config, train_dataset, val_dataset, test_datas
 
             loss = model.loss_calu(predict, batch)
 
+            if config.use_mrl:
+                _, batch_attr, batch_obj, batch_target = batch
+                labels = [batch_target.cuda(), batch_attr.cuda(), batch_obj.cuda()]  # pair, attr, obj
+                logit_scale = model.clip.logit_scale.exp()
+                loss_mrl = sum(
+                    mrl_fn(img_f, txt_f, lbl, logit_scale)[0]
+                    for (img_f, txt_f), lbl in zip(model.mrl_feats, labels)
+                )
+                loss = loss + config.mrl_weight * loss_mrl
+            
             # normalize loss to account for batch accumulation
             loss = loss / config.gradient_accumulation_steps
 
